@@ -1,9 +1,9 @@
 const searchInpute = document.getElementById("inpute-field");
 const searchBtn = document.getElementById("button-search");
 searchInpute.addEventListener("keypress", function (event) {
-    // event.preventDefault();
-    if (event.keyCode == 13)
+    if (event.key === 'Enter') {
         searchBtn.click();
+    }
 });
 
 document.getElementById('error-message').style.display = 'none';
